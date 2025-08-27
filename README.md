@@ -1,4 +1,4 @@
-# chat-with-pdfs-chatbot
+# Chat-with-pdfs-chatbot
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Generates a response based on the selected text chunks.
 
 1. Install the required dependencies:
 
-pip install -r requirements.txt
+ -pip install -r requirements.txt
 
 2. Obtain a Hugging Face API token from https://huggingface.co/settings/tokens
 
