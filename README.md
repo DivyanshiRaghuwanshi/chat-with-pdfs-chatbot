@@ -47,7 +47,8 @@ Here are some examples of the PDFs Chatbot in action:
 <img width="1769" height="894" alt="Screenshot 2025-08-28 044327" src="https://github.com/user-attachments/assets/84b64969-eac4-43eb-8a7a-512b1703ed7f" />
 
 
-Video to get better understanding : https://github.com/user-attachments/assets/16e9b539-260d-4f67-a546-dd79fa0975b8
+## Video to get better understanding of the project: 
+https://github.com/user-attachments/assets/16e9b539-260d-4f67-a546-dd79fa0975b8
 
 ## Features
 
