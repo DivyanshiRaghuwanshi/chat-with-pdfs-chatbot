@@ -1,27 +1,27 @@
-# Chat-with-pdfs-chatbot
+# Chat-with-PDFs Chatbot 📄💬
 
 ## Introduction
 
-Chat with PDFs is a Python tool for querying multiple PDF documents. Ask questions about your PDFs in natural language, and using Large Language Models (LLMs), it can answer your questions from the content of your PDFs. Responses are limited to the PDFs you provide.
+Chat with PDFs is an interactive Python tool that allows you to query multiple PDF documents using natural language. Powered by Google’s Gemini LLM, it provides context-aware responses based only on your uploaded PDFs.
 
 ## How It Works
 
 The application follows these steps to provide responses to your questions:
 
 ### 1. PDF Loading:
-The app loads multiple PDF files and extracts their text.
+Uploads multiple PDFs and extracts their text using PyPDF2.
 
 ### 2. Text Chunking:
-Divides the text into smaller sections for better processing.
+Divides extracted text into smaller, manageable chunks for semantic search.
 
 ### 3. Language Model:
-Uses a Large Language Model to transforms text chunks into numerical representations for better understanding.
+Uses Google Generative AI embeddings (Gemini LLM) to convert text chunks into numerical representations.
 
 ### 4. Similarity Matching:
-Compares your question to the text chunks to find the closest matches.
+Compares your question with the text chunks to find the most relevant sections.
 
 ### 5. Response Generation:
-Generates a response based on the selected text chunks.
+Generates context-aware, detailed responses from the selected text chunks.
 
 ## Dependencies and Installation
 
@@ -29,40 +29,39 @@ Generates a response based on the selected text chunks.
 
  -pip install -r requirements.txt
 
-2. Obtain a Hugging Face API token from https://huggingface.co/settings/tokens
+2. Set up Google API Key:
 
- -Create a .env file in the project directory
+ - Create a .env file in the project directory and add:
 
- - Add your Hugging Face API token to the .env file:
-   
-   HUGGINGFACE_API_KEY=your_huggingface_api_token
+ - GOOGLE_API_KEY=your_gemini_api_key
 
 ## Demo:
 
 Here are some examples of the PDFs Chatbot in action:
 
 ### Upload & Load PDFs:
-<img width="415" height="831" alt="Screenshot 2025-08-27 020517" src="https://github.com/user-attachments/assets/652f61af-2b53-44e6-9dee-567a5c7f113a" />
-<img width="372" height="742" alt="Screenshot 2025-08-27 011432" src="https://github.com/user-attachments/assets/af0dcf4c-1867-4f66-a12a-57a83a716c8c" />
+<img width="301" height="716" alt="Screenshot 2025-08-28 044536" src="https://github.com/user-attachments/assets/f637fbf9-66d1-4937-8fdb-9ba6725846c1" />
+<img width="319" height="794" alt="Screenshot 2025-08-28 044436" src="https://github.com/user-attachments/assets/20580f63-aa22-4701-9891-d7c193b4f790" />
 
 ### Chatting with PDFs:
-<img width="1768" height="819" alt="Screenshot 2025-08-27 020705" src="https://github.com/user-attachments/assets/d8ec94eb-506e-486c-a88e-9accd2497895" />
-<img width="742" height="881" alt="Screenshot 2025-08-27 020934" src="https://github.com/user-attachments/assets/cec30594-a680-4dd1-9605-ae7ff4210b0e" />
-
+<img width="1769" height="894" alt="Screenshot 2025-08-28 044327" src="https://github.com/user-attachments/assets/84b64969-eac4-43eb-8a7a-512b1703ed7f" />
+https://github.com/user-attachments/assets/16e9b539-260d-4f67-a546-dd79fa0975b8
 ## Features
 
-- Chat with multiple PDFs simultaneously
-  
-- Uses LLMs for natural language understanding
-  
-- Provides precise answers based on document content
-  
-- Supports PDF uploading and processing
+- Query multiple PDFs simultaneously.
 
+- LLM-powered natural language understanding.
+
+- Provides precise answers based on PDF content.
+
+- Supports conversation history for multi-turn questions.
+
+- Interactive Streamlit-based UI with real-time responses.
+  
 ## Notes on Model Usage
 
-- By default, the app uses a **free Hugging Face model** downloaded and run locally.
+- By default, the app uses Gemini-1.5-flash via Google Generative AI.
 
-- This allows offline usage and avoids API costs, but **response times may be slower** compared to cloud models.
+- Offline usage is possible with locally stored embeddings.
 
-- For faster responses, you can use an **OpenAI model** by providing your API key in the `.env` file, which can **significantly increase speed and efficiency**.
+- For faster responses, online models (OpenAI or Google API) can be used with API keys.
