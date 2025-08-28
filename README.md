@@ -27,7 +27,7 @@ Generates context-aware, detailed responses from the selected text chunks.
 
 1. Install the required dependencies:
 
- -pip install -r requirements.txt
+  -pip install -r requirements.txt
 
 2. Set up Google API Key:
 
@@ -35,7 +35,7 @@ Generates context-aware, detailed responses from the selected text chunks.
 
  - GOOGLE_API_KEY=your_gemini_api_key
 
-## Demo:
+## Demonstration:
 
 Here are some examples of the PDFs Chatbot in action:
 
@@ -46,6 +46,7 @@ Here are some examples of the PDFs Chatbot in action:
 ### Chatting with PDFs:
 <img width="1769" height="894" alt="Screenshot 2025-08-28 044327" src="https://github.com/user-attachments/assets/84b64969-eac4-43eb-8a7a-512b1703ed7f" />
 https://github.com/user-attachments/assets/16e9b539-260d-4f67-a546-dd79fa0975b8
+
 ## Features
 
 - Query multiple PDFs simultaneously.
