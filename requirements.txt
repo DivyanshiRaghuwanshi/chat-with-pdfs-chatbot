@@ -1,0 +1,24 @@
+# Core libraries
+streamlit==1.48.1
+python-dotenv==1.1.1
+
+# PDF processing
+PyPDF2==3.0.1
+
+# Vector store
+faiss-cpu==1.7.4
+
+# LangChain & Google GenAI
+langchain==0.1.16
+langchain-community==0.0.38
+langchain-huggingface==0.0.3
+langchain-google-genai==1.0.4
+google-generativeai==0.5.4
+
+# Optional for embeddings
+# Bumped to satisfy langchain-huggingface>=0.0.3 requirement
+sentence-transformers==2.6.1
+transformers==4.55.4
+torch==2.8.0
+fastembed==0.7.3
+onnxruntime==1.20.1
