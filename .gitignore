@@ -1,0 +1,32 @@
+# Virtual environment
+.venv/
+
+# FAISS vector store
+faiss_index/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# OS-specific
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables file
+.env
+
+# IDE-specific files (optional)
+.vscode/
+.idea/
